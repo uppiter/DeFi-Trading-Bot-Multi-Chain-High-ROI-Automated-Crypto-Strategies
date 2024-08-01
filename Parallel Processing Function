@@ -1,0 +1,25 @@
+import threading
+
+def run_in_parallel(functions, args_list):
+  """Runs multiple functions in parallel.
+
+  Args:
+    functions: List of functions to run.
+    Args_list: List of argument lists for functions.
+
+  Returns:
+    A list of the results of executing functions.
+  """
+  threads = []
+  results = []
+
+  For function, args in zip(functions, args_list):
+      thread = threading.Thread(target=function, args=args)
+      threads.append(thread)
+      thread.start()
+
+  for thread in threads:
+      thread.join()
+      results.append(thread.result)
+
+  return results
