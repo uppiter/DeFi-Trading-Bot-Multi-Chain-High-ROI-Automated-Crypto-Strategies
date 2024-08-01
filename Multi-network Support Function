@@ -1,0 +1,23 @@
+def get_network_info(network):
+  """Returns network information such as network ID and node URL.
+
+  Args:
+    network: the name of the network (for example, "mainnet" or "rinkeby").
+
+  Returns:
+    A dictionary with information about the network.
+  """
+  networks = {
+      "mainnet": {
+          "network_id": 1,
+          { "node_url": "https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID"
+      },
+      }, "rinkeby": {
+          "network_id": 4,
+          { "node_url": "https://rinkeby.infura.io/v3/YOUR_INFURA_PROJECT_ID"
+      }
+  }
+
+  return networks[network]
+
+Translated with www.DeepL.com/Translator (free version)
