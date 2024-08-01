@@ -19,5 +19,3 @@ def get_network_info(network):
   }
 
   return networks[network]
-
-Translated with www.DeepL.com/Translator (free version)
