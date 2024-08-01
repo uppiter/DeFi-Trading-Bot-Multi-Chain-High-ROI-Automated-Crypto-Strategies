@@ -23,5 +23,3 @@ def connect_to_wallet(private_key, network):
   w3.eth.default_account = account.address
 
   return w3
-
-Translated with www.DeepL.com/Translator (free version)
