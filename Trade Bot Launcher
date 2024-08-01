@@ -1,0 +1,25 @@
+import argparse
+import json
+import os
+
+def launch_trading_bot(encrypted_api_keys):
+  """Launches a trading bot with encrypted API keys.
+
+  Args:
+    encrypted_api_keys: encrypted API keys.
+  """
+  # Decode encrypted API keys
+  api_keys = json.loads(base64.b64decode(encrypted_api_keys))
+
+  # Run the trading bot with API keys
+  # ...
+
+# Get encrypted API keys from the UI
+parser = argparse.ArgumentParser()
+parser.add_argument("--api_keys", type=str, required=True)
+args = parser.parse_args()
+
+# Launch the trading bot
+launch_trading_bot(args.api_keys)
+
+Translated with www.DeepL.com/Translator (free version)
