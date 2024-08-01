@@ -21,5 +21,3 @@ args = parser.parse_args()
 
 # Launch the trading bot
 launch_trading_bot(args.api_keys)
-
-Translated with www.DeepL.com/Translator (free version)
